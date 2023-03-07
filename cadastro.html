@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@200;400;700&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="./public/assets/cartacinza.svg" type="image/x-icon">    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="">
+    <title>Página de Recados com JS</title>
+</head>
+<body>
+    <main class="corpo-todo">
+        <section class="barra-lateral"></section>
+        <section class="form-conteudo">
+            <article class="form-article">
+                <h2> Sistema de Recados</h2>
+                <p class="p-form">Cadastrar</p>
+                <form id="formCadastro" class="login-form">
+                    <div class="div-input">
+                        <input type="email" class=" input-padrao " id="emailCadastro" required
+                            placeholder="Utilize seu e-mail para realizar seu Cadastro.">
+                    </div>
+                    <div class="div-input">
+                        <input type="password" class=" input-padrao " id="senhaCadastro" required minlength="6"
+                            placeholder="Crie uma senha.">
+                    </div>
+                    <div class="div-input">
+                        <input type="password" class=" input-padrao " id="senhaCadastroConfirmacao" required
+                            minlength="6" placeholder="Confirme sua senha.">
+                    </div>
+                    <div class="div-input">
+                        <button type="submit" class=" button-cadastrar btn-index">Cadastrar</button>
+                    </div>
+                    <div id="alertaMsgCadastro"></div>
+                    <p>Já possui conta?
+                        <a href="index.html" class="criar-conta">Login</a>
+                    </p>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>2023 by &copy;SheilaAcunha <a target="_blank" href="https://www.linkedin.com/in/sheilaacunha90/"><img title="clique para ter acesso ao linkedin" src="./public/assets/linkedin.png" alt="logo linkedin"></a> </footer>
+
+    <script src="./public/js/cadastro.js"></script>
+</body>
+</html>

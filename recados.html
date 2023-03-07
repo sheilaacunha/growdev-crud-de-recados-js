@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@200;400;700&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="./public/assets/cartacinza.svg" type="image/x-icon">    <link rel="stylesheet" href="./public/css/style.css">
+        <title>Página de Recados com JS</title>
+</head>
+
+<body class="body-recados">
+    <main class="main-recados">
+        <section class="containerSec">
+            <article>
+                <div class="recado-col ">
+                    <h2> Bem vindo aos seus Recados, <span id="nomeUsuarioLogadoHtml"> </span></h2>
+                    <img src="./public/assets/cartacinza.svg" class="icon-carta" alt="icone carta">
+                </div>
+                <div class="div-form">
+                    <form action="" id="formSalvar">
+                        <input type="text" placeholder="Descrição" required class="input-recados-descricao"
+                            id="inputDescricao">
+                        <input type="text" placeholder="Detalhamento" required class="input-recados-detail"
+                            id="inputDetalhes">
+                        <button type="submit" class="button-salvar " id="buttonSalvar">Salvar </button>
+                    </form>
+                </div>
+            </article>
+            <article class="row">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th> # </th>
+                            <th>data</th>
+                            <th>Descrição</th>
+                            <th>Detalhamento</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bodyRecados">
+                        <!-- <tr id="idRecado" class="linha-tr">
+                            <td> 222 </td>
+                            <td> 12/12/2012</td>
+                            <td> recados testes </td>
+                            <td> meus recados para testes, e bora la. Lorem ipsum dolor sit amet </td>
+                            <td class="td-button">
+                                <button type="submit" class="button-editar btn"> Editar</button>
+                                <button type="submit" class="button-apagar btn">Apagar</button>
+                            </td>
+                        </tr> -->
+                        <!-- deixar o codigo bem indentado senao o Edson vai puxar orelha🤣 -->
+                    </tbody>
+                </table>
+            </article>
+            <div>
+                <button type="click" class="button-sair" id="buttonSair">Sair</button>
+            </div>
+        </section>
+    </main>
+    <script src="./public/js/recados.js"></script>
+</body>
+
+</html>
